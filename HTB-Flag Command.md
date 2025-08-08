@@ -6,6 +6,6 @@
 여러 선택지가 있지만 가장 중요한 것은 어떠한 선택지를 고르는 것이 아니라
 숨겨져 있는 데이터를 찾는 것이다.
 
-1.Burp Suite를 Proxy로 하여도 
+1.Burp Suite를 Proxy로 하여도
 
 #Write-Up
