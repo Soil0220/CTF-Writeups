@@ -33,7 +33,7 @@ nmap, gobuster에서 유의미한 결과가 나오기 전, 이전에 버그바�
 
 ![](./Screenshot/Screenshot_2025-08-08_17_57_00.png)
 
-바로 엔드포인트를 확인하였고 allPossibleCommands라고 되어있는 것과 그 내용을 살펴본 결과 선택지의 내용들이 정리되어 있었다.
+바로 엔드포인트를 확인하였고 allPossibleCommands라고 되어있는 것과 그 내용을 살펴본 결과 선택지의 내용이라고 추측하였다.
 그리고 마지막 secret을 통해 새로운 선택지를 얻었다.
 
 ![](./Screenshot/Screenshot_2025-08-08_17_57_20.png)
