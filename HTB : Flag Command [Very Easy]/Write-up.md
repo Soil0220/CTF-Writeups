@@ -23,25 +23,40 @@
 처음 CTF에 진입하면 안내문과 함께 CTF가 시작되고 "HEAD NORTH" 등 다양한 선택지를 고르면서 이야기를 진행할 수 있다.
 
 ![](./Screenshot/Screenshot_2025-08-08_17_56_29.png)
+<br>
+<br>
+<br>
 
 하지만 이런방식으로는 CTF 문제의 존재의미가 없을 거 같아서 nmap, gobuster를 돌려보았다.
 
 ![](./Screenshot/Screenshot_2025-08-08_18_10_37.png)
+<br>
+<br>
+<br>
 
 nmap, gobuster에서 유의미한 결과가 나오기 전, 이전에 버그바운티 관련 Reddit Writeup을 볼 때 누군가 js에서 흥미로운 엔드포인트를 발견하였다는  
 글이 생각이 났고 나도 추가적인 진입점을 찾기위해 js 파일을 분석하였다. 그결과 fetch()에 적힌 엔드포인트를 발견하였다.
 
 ![](./Screenshot/Screenshot_2025-08-08_17_57_00.png)
+<br>
+<br>
+<br>
 
 바로 엔드포인트를 확인하였고 allPossibleCommands라고 되어있는 것과 그 내용을 살펴본 결과 선택지의 내용이라고 추측하였다.
 그리고 마지막 secret을 통해 새로운 선택지를 얻었다.
 
 ![](./Screenshot/Screenshot_2025-08-08_17_57_20.png)
+<br>
+<br>
+<br>
 
 클라 자체에 내가 입력한 선택지에 대한 응답을 담고 있는 내용이 없는것을 미루어보아 선택지 입력에 대한 응답은 서버측으로부터 온다고 생각 하였고  
 Burp suite의 프록시 모드를 사용하여 요청과 응답을 잡아보았다.
 
 ![](./Screenshot/Screenshot_2025-08-08_18_52_18.png)
+<br>
+<br>
+<br>
 
 예상대로 동작하며 이전에 얻은 secret 선택지로 command를 교체하여 플래그를 획득하였다.
 
